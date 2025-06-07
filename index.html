@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>literacy community hub</title>
+    <meta name="description" content="Rubix Studio" />
+    <meta name="author" content="RubixStudio" />
+
+    <meta property="og:title" content="literacy-community-hub" />
+    <meta property="og:description" content="Rubix Studio Generated Project" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://rubixstudio.dev/opengraph-image-p98pqg.png" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <!-- ✅ AUDIO PLAYER -->
+    <audio id="bg-music" loop>
+      <source src="/sekarang_atau_terlambat.mp3" type="audio/mpeg" />
+      Browser kamu tidak mendukung audio.
+    </audio>
+
+    <!-- ✅ AUTOPLAY SCRIPT (klik untuk mulai) -->
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        const audio = document.getElementById('bg-music');
+        const startAudio = () => {
+          audio.play().catch((err) => {
+            console.warn('Autoplay ditolak browser:', err);
+          });
+          window.removeEventListener('click', startAudio);
+        };
+        window.addEventListener('click', startAudio);
+      });
+    </script>
+
+    <!-- ✅ SCRIPT UTAMA JANGAN DIHAPUS -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
