@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Welcome to your RubixStudio project
 
 ## Project info
@@ -71,3 +72,6 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.RubixStudio.dev/tips-tricks/custom-domain#step-by-step-guide)
+=======
+# literacy_Communty_hub_website
+>>>>>>> 4568507adcd8eb40d933f5f8f41cc18496d42318
